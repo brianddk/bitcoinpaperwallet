@@ -13171,6 +13171,16 @@ ninja.publicKey = {
 						draw.fillTextStrongBlur(ctx, opts.text.publicAddress, 268, 320, 4, opts);
 						draw.fillTextStrongBlur(ctx, opts.text.depositVerify, 268, 696, 4, opts);
 						
+						ctx.fillStyle="#000000";
+						ctx.font = "72px Impact";
+						draw.fillTextStrongBlur(ctx, "$ 100", 849, 257, 4, opts); // Arial Black 72
+						ctx.font = "36px Impact";
+						draw.fillTextStrongBlur(ctx, "1 BTC = $ 313", 853, 461, 4, opts);
+						ctx.font = "48px Impact";
+						draw.fillTextStrongBlur(ctx, "319.49 mBTC", 815, 695, 4, opts);
+						
+						ctx.fillStyle = opts.color.text;
+						ctx.font = opts.font;
 						ctx.rotate(-Math.PI*2/4);
 						draw.fillTextStrongBlur(ctx, opts.text.privateKey, -482, 2396, 4, opts);
 						draw.fillTextStrongBlur(ctx, opts.text.walletImportFormat, -482, 2844, 4, opts);
